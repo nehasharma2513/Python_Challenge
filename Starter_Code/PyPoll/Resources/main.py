@@ -2,7 +2,7 @@ import csv
 import sys
 import os
 
-election_data_csv = "PyPoll\\Resources\\election_data.csv"
+election_data_csv = "Starter_Code\\PyPoll\\Resources\\election_data.csv"
 # Open and read csv
 with open(election_data_csv, encoding='UTF-8') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=",")
@@ -55,7 +55,7 @@ printing_output()
 
 # Writing all calculated values to text file named output.txt
 stdoutOrigin=sys.stdout 
-sys.stdout = open("PyPoll\Resources\output.txt", "w")
+sys.stdout = open("Starter_Code\\PyPoll\Resources\output.txt", "w")
 printing_output()   
 sys.stdout.close()
 sys.stdout=stdoutOrigin

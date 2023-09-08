@@ -2,7 +2,7 @@ import os
 import csv
 import sys
 
-budget_data_csv = "PyBank\\Resources\\budget_data.csv"
+budget_data_csv = rf"Starter_Code\\PyBank\\Resources\\budget_data.csv"
 
 # Open and read csv
 with open(budget_data_csv, encoding='UTF-8') as csv_file:
@@ -59,7 +59,7 @@ printing_output()
 
 # Writing all calculated values to text file named output.txt
 stdoutOrigin=sys.stdout 
-sys.stdout = open("PyBank\Resources\output.txt", "w")
+sys.stdout = open("Starter_Code\\PyBank\\Resources\\output.txt", "w")
 printing_output()   
 sys.stdout.close()
 sys.stdout=stdoutOrigin
